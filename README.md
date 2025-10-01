@@ -1,10 +1,12 @@
+
+
 # Meteorological Data Analysis Project
 
-This repository contains a comprehensive analysis of meteorological data using R, structured across three main Jupyter notebooks. The project covers data exploration, statistical analyses, and clustering techniques to extract insights from weather station data.
+This repository contains a comprehensive analysis of meteorological data using R, structured across four main Jupyter notebooks. The project covers data exploration, statistical analyses, clustering techniques, and spatial/geographical visualization to extract insights from weather station data.
 
 ## Data
 
-- The main dataset is located in the data folder:  
+- The main dataset is located in the `data` folder:  
   `donnees-synop-essentielles-omm.csv`  
   This file contains essential meteorological observations from various stations.
 
@@ -12,7 +14,7 @@ This repository contains a comprehensive analysis of meteorological data using R
 
 ## Notebooks Overview
 
-### I. 0-Data_Presentation.ipynb — Data Exploration & Presentation
+### 1. `0-Data_Presentation.ipynb` — Data Exploration & Presentation
 
 This notebook provides an introductory exploration of the meteorological dataset:
 - **Data Loading:** Reads the raw CSV data and presents its structure.
@@ -24,7 +26,7 @@ This notebook is ideal for understanding the dataset's content and preparing for
 
 ---
 
-### II. 1-Analyses.ipynb — Statistical Analyses
+### 2. `1-Analysis.ipynb` — Statistical Analyses
 
 This notebook performs advanced statistical analyses on the cleaned dataset:
 - **Data Cleaning:** Selects only numerical columns, removes constant columns, and imputes missing values.
@@ -39,7 +41,7 @@ This notebook is the core of the statistical analysis, providing insights into t
 
 ---
 
-### III. 2-Cluster.ipynb — Clustering & Pattern Discovery
+### 3. `2-Cluster.ipynb` — Clustering & Pattern Discovery
 
 This notebook focuses on unsupervised learning and pattern recognition:
 - **Data Preparation:** Loads and summarizes the dataset, focusing on relevant features.
@@ -51,10 +53,21 @@ This notebook is useful for discovering hidden patterns and grouping similar wea
 
 ---
 
+### 4. `3-Geograph.ipynb` — Geographical Visualization & Spatial Analysis
+
+This notebook is dedicated to spatial analysis and mapping:
+- **Spatial Data Preparation:** Filters and prepares data for mapping, focusing on stations in metropolitan France.
+- **Geographical Visualization:** Plots meteorological variables (such as temperature) on maps of France for specific dates.
+- **Mapping Techniques:** Uses R mapping libraries to display weather data spatially, including color gradients and legends.
+- **Spatial Insights:** Helps to understand the geographical distribution and spatial patterns of key meteorological variables.
+
+This notebook is essential for visualizing and interpreting the spatial dimension of weather data.
+
+---
 
 ## Requirements
 
-- R and the following packages: `glmnet`, `corrplot`, `pheatmap`, `FactoMineR`, `factoextra`, `caret`, `pls`
+- R and the following packages: `glmnet`, `corrplot`, `pheatmap`, `FactoMineR`, `factoextra`, `caret`, `pls`, `maps`, `RColorBrewer`, `mapproj`, `lubridate`, `dplyr`, `clue`
 - Jupyter or VS Code with R kernel support
 
 ---
